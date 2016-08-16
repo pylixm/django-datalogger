@@ -2,6 +2,7 @@
 Datalogger
 =====
 
+[![ENV](https://img.shields.io/pypi/v/nine-0.1.1.svg)](https://github.com/pylixm/django-datalogger)
 [![ENV](https://img.shields.io/badge/python-2.7-green.svg)](https://github.com/pylixm/django-datalogger)
 [![ENV](https://img.shields.io/badge/django-1.7+-green.svg)](https://github.com/pylixm/django-datalogger)
 [![LICENSE](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/pylixm/django-datalogger/master/LICENSE.txt)
