@@ -53,5 +53,6 @@ class TestA(LogOnUpdateDeleteModel):
 Reference
 ---------
 
-[django-globals](https://github.com/svetlyak40wt/django-globals)
-[The answer of ivanperelivskiy in stackoverflow](http://stackoverflow.com/questions/1355150/django-when-saving-how-can-you-check-if-a-field-has-changed)
+- [django-globals](https://github.com/svetlyak40wt/django-globals)
+
+- [The answer of ivanperelivskiy in stackoverflow](http://stackoverflow.com/questions/1355150/django-when-saving-how-can-you-check-if-a-field-has-changed)
