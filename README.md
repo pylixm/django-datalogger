@@ -48,3 +48,10 @@ class TestA(LogOnUpdateDeleteModel):
 
 - You will find the data change log in datalogger models.You can visit http://127.0.0.1:8000/admin/
    to see these changer.
+
+
+Reference
+---------
+
+[django-globals](https://github.com/svetlyak40wt/django-globals)
+[The answer of ivanperelivskiy in stackoverflow](http://stackoverflow.com/questions/1355150/django-when-saving-how-can-you-check-if-a-field-has-changed)
