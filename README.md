@@ -16,23 +16,23 @@ Quick start
 -----------
 
 0. Installation.
-
+```bash
     pip install django-datalogger
-
+```
 1. Add `django-datalogger` to your INSTALLED_APPS setting like this::
-
+```python
     INSTALLED_APPS = [
         ...
         'django-datalogger',
     ]
-
+```
 2. Add `datalogger.middleware.common.DataUpadataDeleteMiddleware` to your MIDDLEWARE_CLASSES setting like this::
-
+```python
     MIDDLEWARE_CLASSES = (
     ...
     'datalogger.middleware.common.DataUpadataDeleteMiddleware',
     )
-
+```
 3. Run `python manage.py makemigrations` and `python manage.py migrate` to create the `django-datalogger` models.
 
 4. Start your models inherit `LogOnUpdateDeleteModel` abstract model like this:
