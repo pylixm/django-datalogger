@@ -1,4 +1,3 @@
-=====
 Datalogger
 =====
 
@@ -15,7 +14,7 @@ Datalogger 是一个记录 `django model` 的数据变更的app。记录了model
 快速入门
 -----------
 
-0. 安装
+1. 安装
 ```python
     pip install django-datalogger
 ```
@@ -26,17 +25,16 @@ Datalogger 是一个记录 `django model` 的数据变更的app。记录了model
         'django-datalogger',
     ]
 ```
-2. 将中间件 `datalogger.middleware.common.DataUpadataDeleteMiddleware` 添加到你setting文件的 `MIDDLEWARE_CLASSES`中:
+1. 将中间件 `datalogger.middleware.common.DataUpadataDeleteMiddleware` 添加到你setting文件的 `MIDDLEWARE_CLASSES`中:
 ```python
     MIDDLEWARE_CLASSES = (
     ...
     'datalogger.middleware.common.DataUpadataDeleteMiddleware',
     )
 ```
-3. 运行 `python manage.py makemigrations` 和 `python manage.py migrate` 来创建 `django-datalogger` 的数据记录model。
+1. 运行 `python manage.py makemigrations` 和 `python manage.py migrate` 来创建 `django-datalogger` 的数据记录model。
 
-4. 开始编写你自己的model，使其继承 `LogOnUpdateDeleteModel`抽象类:
-
+1. 开始编写你自己的model，使其继承 `LogOnUpdateDeleteModel`抽象类:
 ```python
 class TestA(LogOnUpdateDeleteModel):
     name = models.CharField( max_length=128, blank=True)
@@ -44,13 +42,10 @@ class TestA(LogOnUpdateDeleteModel):
     create_at = models.DateTimeField(blank=True, auto_now_add=True)
     update_at = models.DateTimeField(blank=True, auto_now=True)
 ```
-
-5. 使用 django的 model api 来修改 `TextA` 的数据。
-
+1. 使用 django的 model api 来修改 `TextA` 的数据。
 ```python
 a = TestA.object.get(id=1)
 a.name = 'test1'
 a.save()
 ```
-
-6.  你可以从  `datalogger models` 表中看到数据修改记录。
+1.  你可以从  `datalogger models` 表中看到数据修改记录。
