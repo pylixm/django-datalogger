@@ -10,6 +10,7 @@ Datalogger
 Datalogger is a simple Django app to record data changes.
 
 [中文说明](docs/README_zh.md)
+[聊天室](https://gitter.im/django-datalogger/Lobby)
 
 
 
